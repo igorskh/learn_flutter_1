@@ -52,7 +52,6 @@ class GHFlutterState extends State<GHFlutter> {
     });
   }
 
-
   @override
   void initState() {
     super.initState();

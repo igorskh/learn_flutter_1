@@ -8,15 +8,12 @@ class MemberState extends State<MemberWidget> {
   MemberState(this.member);
 
   _showAlertDialog(BuildContext context) {
-    // set up the button
     Widget okButton = FlatButton(
       child: Text("OK"),
       onPressed: () {
         Navigator.pop(context);
       },
     );
-
-    // set up the AlertDialog
     AlertDialog alert = AlertDialog(
       title: Text("My title"),
       content: Text("This is my message."),

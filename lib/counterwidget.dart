@@ -12,28 +12,27 @@ class CounterWidget extends StatelessWidget {
     final _counter = getIt.get<Favourites>();
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(Strings.appTitle),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            StreamBuilder<int>(
-                stream: _counter.subjectCounter,
-                builder: (context, snapshot) {
-                  return Text(
-                    'You have pushed the button ${snapshot.data} times',
-                  );
-                })
-          ],
+        appBar: AppBar(
+          title: Text(Strings.appTitle),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _counter.increment,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              StreamBuilder<int>(
+                  stream: _counter.subjectCounter,
+                  builder: (context, snapshot) {
+                    return Text(
+                      'You have pushed the button ${snapshot.data} times',
+                    );
+                  })
+            ],
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: _counter.increment,
+          tooltip: 'Increment',
+          child: Icon(Icons.add),
+        ));
   }
 }
