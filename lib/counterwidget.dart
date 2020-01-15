@@ -3,6 +3,7 @@ import 'package:get_it/get_it.dart';
 
 import 'strings.dart';
 import 'favourites.dart';
+import 'ghflutter.dart';
 
 final GetIt getIt = GetIt.instance;
 
@@ -25,7 +26,17 @@ class CounterWidget extends StatelessWidget {
                     return Text(
                       'You have pushed the button ${snapshot.data} times',
                     );
-                  })
+                  }),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => GHFlutter()));
+                },
+                child: Text(
+                    'Members List',
+                    style: TextStyle(fontSize: 20)
+                ),
+              ),
             ],
           ),
         ),
