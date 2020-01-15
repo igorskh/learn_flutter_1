@@ -8,4 +8,8 @@ class Favourites {
   increment() {
     subjectCounter.add(current + 1);
   }
+
+  decrement() {
+    subjectCounter.add(current - 1);
+  }
 }

@@ -28,6 +28,11 @@ class CounterView extends StatelessWidget {
                   })
             ],
           ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: _counter.decrement,
+          tooltip: 'Decrement',
+          child: Icon(Icons.remove),
         ));
   }
 }
