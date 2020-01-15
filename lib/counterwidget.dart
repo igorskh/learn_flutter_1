@@ -4,6 +4,7 @@ import 'package:get_it/get_it.dart';
 import 'strings.dart';
 import 'favourites.dart';
 import 'ghflutter.dart';
+import 'counterview.dart';
 
 final GetIt getIt = GetIt.instance;
 
@@ -34,6 +35,16 @@ class CounterWidget extends StatelessWidget {
                 },
                 child: Text(
                     'Members List',
+                    style: TextStyle(fontSize: 20)
+                ),
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => CounterView()));
+                },
+                child: Text(
+                    'Counter View',
                     style: TextStyle(fontSize: 20)
                 ),
               ),
