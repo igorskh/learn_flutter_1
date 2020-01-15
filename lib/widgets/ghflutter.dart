@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:get_it/get_it.dart';
 
-import 'member.dart';
-import 'strings.dart';
+import '../models/member.dart';
+import '../strings.dart';
 import 'memberwidget.dart';
 
 final GetIt getIt = GetIt.instance;

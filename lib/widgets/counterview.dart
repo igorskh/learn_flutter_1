@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
-import 'strings.dart';
-import 'favourites.dart';
+import '../strings.dart';
+import '../models/favourites.dart';
 
 final GetIt getIt = GetIt.instance;
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'member.dart';
+import '../models/member.dart';
 
 class MemberState extends State<MemberWidget> {
   final Member member;

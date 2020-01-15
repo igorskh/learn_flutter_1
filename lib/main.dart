@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
-import 'counterwidget.dart';
+import 'widgets/counterwidget.dart';
 import 'strings.dart';
-import 'ghflutter.dart';
-import 'favourites.dart';
+import 'widgets/ghflutter.dart';
+import 'models/favourites.dart';
 
 final GetIt getIt = GetIt.instance;
 
